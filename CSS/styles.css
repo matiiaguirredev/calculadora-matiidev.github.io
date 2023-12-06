@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,200&family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    min-height: 100vh;
+    background-color:rgb(225, 195, 195);
+    display: grid;
+    place-items: center;
+    
+}
+
+.calculadora {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .25rem;
+    background-color: rgba(60, 35, 144, 0.744);
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: .75rem;
+
+
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: #715FAE;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: end;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+
+    word-wrap: break-word; /* para el tema que se sobresalen todos los numeros */
+}
+
+.btn {
+    background-color: rgba(60, 35, 144, 0.744);
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: monospace;
+    
+}
+
+footer {
+    color: rgba(128, 128, 128, 0.478);
+    font-weight: 600;
+    
+}
+
+h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-top: 2rem;
+    position: relative;
+    top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    color: rgba(128, 128, 128, 0.738);
+}
+
+.btn:hover {
+    background-color: #715FAE;
+    
+}
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: rgb(160, 65, 65);
+}
+
+#igual:hover {
+    background-color: rgb(235, 115, 115);
+
+}
+
+
+@media screen and (max-width: 350px){
+    body {
+        display: none;
+    }
+}
